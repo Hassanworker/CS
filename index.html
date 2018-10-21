@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YD</title>
+	<style type="text/css">
+		
+
+
+
+		html, body {
+    height: 100%;
+    background-color: black;
+    background-image: "im2.png"
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.back {
+    height: 100%;}
+
+
+
+
+
+
+
+    	#eye{width:300px; height:300px;  position:absolute; left:300px; top:100px;
+		 
+
+		 
+		 animation:stare 8s infinite;
+		  
+}
+
+@keyframes stare{
+		10%{position:absolute; left:0px;   top: 0px; }
+		20%{position:absolute; left:400px; bottom: 200px;}
+		30%{position:absolute; right:250px; top: 120px; width: 150px; height: 150px;}
+		40%{position:absolute; left:450px; top: 350px;}
+		50%{position:absolute; left:720px; top:50px; width: 1200px; height: 1200px;}
+		70%{position:relative; left:60px; top:450px;}
+		80%{position:absolute; right: 250px; top: 10px;}
+		90%{position:absolute; right: :0px; top:300px; width: 0px; height: 0px;}}
+
+
+		#eye2{width:115px; height:115px; position: absolute; right:200px; bottom:150px;
+
+		animation: observe 3s infinite;	
+
+
+
+	}
+
+
+
+
+@keyframes observe {
+
+	5% {position:  absolute; width:600px height600px;}
+	10%{position: absolute; transform:rotate(0);}
+	20%{position: absolute; transform:  rotate(120deg);}
+	30%{position: absolute; right:20px;	transform: rotate(240deg);}
+	40%{position: absolute; width:300px; height: 300px; right: 50px; transform:rotate(360deg);}
+	50%{position: absolute; right: 0px;}
+	80%{position: absolute; right: 30px;}
+	90%{position: absolute; width: 800px; height : 800px;}
+	100%{position: absolute; width: 0px; height: 0px;}
+
+
+
+}
+
+
+
+
+		#sinbox{position: absolute;  left: 200px; top: 600px; 
+			animation: ddd 0.1s infinite;
+
+							}
+		
+		#sin{width:650px; height: 650px; animation: redtide 0.01s infinite; animation-play-state: paused;}
+		
+		#sin:hover{animation-play-state:running;}
+		
+	
+		@keyframes ddd{
+			0%{left:400px;}	
+			100%{left:380px;}
+									}
+
+		@keyframes redtide{0%{left:800px;filter:hue-rotate(0deg);}	
+			100%{left:100px;filter:hue-rotate(360deg);}}							
+
+	    #me{position: absolute; width: 250px; height: 250px; left: 460px; top: 220px;
+		animation: bunjjeock 3s infinite;}
+		
+
+
+	@keyframes bunjjeock {
+	0%{position:absolute; transform: scale(2);}	
+   10%{position:absolute; transform: scale(1.6);}
+   30%{position:absolute; transition: scale(0.8);}	
+   50%{position:absolute; transform: scale(0);}
+   70%{position:absolute; transform: scale(1.2);}
+   80%{position:absolute; transform: scale(2);}
+   90%{position:absolute; transform: scale(1.3);}
+}
+
+
+
+#gsb{position: absolute; width: 0px; height: 0px; left:500px; top:300px;transition: all 1s;}
+
+
+
+	</style>
+	
+
+
+
+
+
+</head>
+<body>
+	
+
+	<img id=goo src ="k1.png">
+	<div id="sinbox"><img id=sin src ="im2.png"></div>
+	<img id=eye src ="im3.png">
+	<img id=eye2 src ="im3.png">
+	<img id=me src ="monoeye.png">	
+	<video id=gsb src="vf.mp4" type="video/mp4">
+	</video>
+	<audio id=co src="co.mp3" type="audio/mp3">
+		
+	</audio>
+
+<script type="text/javascript">
+	
+var toggle = "off"
+sin.onclick=function(){
+			if(toggle == "off"){
+			toggle = "on";
+				co.play();
+				gsb.style.width="500px";
+				gsb.style.height="350px";
+				gsb.setAttribute("src","vf.mp4");
+				gsb.play();
+			vid.currentTime=0;
+			}
+			else{ 
+			toggle = "off";
+			
+			gsb.style.width="0px";
+				gsb.style.height="0px";
+				gsb.setAttribute("src","vf.mp4");
+				gsb.pause();	
+			}
+			}	
+
+			
+
+
+	
+
+</script>
+
+
+</body>
+</html>
